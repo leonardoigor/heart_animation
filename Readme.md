@@ -10,4 +10,4 @@
 
 - #### https://leonardoigor.github.io/heart_animation/
 
-![alt text](./statict\imgs\preview.JPG)
+![alt text](https://github.com/leonardoigor/heart_animation/blob/main/statict/imgs/preview.JPG)
