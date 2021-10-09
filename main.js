@@ -30,6 +30,17 @@ const sett2 = () => {
     t2.style.borderRadius = " 50%";
     // left: 52.7 %;
 };
+let inverse = true
+let play = async () => {
+    let b = document.body
+    b.style.transform = `scale(${inverse ? '1' : '1.1'})`
+    inverse = !inverse
+    // inverse = !inverse
+
+    await document.querySelector('audio').play()
+    b.style.transform = `scale(${inverse ? '1' : '1.2'})`
+    setTimeout(() => b.style.transform = `scale(${inverse ? '1' : '1.0'})`, 200)
+}
 
 
 setTimeout(function () {
@@ -40,6 +51,7 @@ setTimeout(function () {
 
     setTimeout(function () {
         red.forEach(e => e.style.filter = "drop-shadow(0 0 0.5rem #ff00009a)")
-
-    }, 1000)
+        // document.body.classList.add('bit')
+        setInterval(play, 1000);
+    }, 4000)
 }, 1000)
