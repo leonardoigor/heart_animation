@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="t1 red"></div>
+        <div class="t2 red"></div>
+        <div class="b1 red"></div>
+    </div>
+</body>
+
+<style>
+    * {
+        background-color: black;
+        -webkit-transition: all 5s ease;
+        -o-transition: all 5s ease;
+        transition: all 5s ease;
+    }
+
+    .content {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .red {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+    .b1 {
+        top: 75%;
+        -webkit-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+
+    .t1 {
+        width: 100px;
+        height: 120px;
+    }
+
+    .t2 {
+        width: 100px;
+        height: 120px;
+    }
+</style>
+<script src="./main.js">
+</script>
+
+</html>
